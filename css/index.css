@@ -1,0 +1,265 @@
+.jd_container{
+    width:100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+/*头部开始*/
+.jd_header {
+    max-width: 640px;
+    width:100%;
+    height:40px;
+    /*background-color: red;*/
+    position: fixed;
+    top:0;
+    z-index: 999;
+    background-color: rgba(222, 24, 27, 0);
+
+
+}
+.jd_header .jd_logo {
+    width: 57px;
+    height:21px;
+    background: url("../img/jd-sprites.png") no-repeat 0 -109px;
+    /*background-color: green;*/
+    background-size: 200px 200px;
+    position: absolute;
+    left:7px;
+    top: 7px;
+}
+.jd_header .jd_search {
+    margin:0 50px 0 75px ;
+    position: relative;
+
+}
+.jd_header .jd_search .search_icon {
+    height:22px;
+    width: 22px;
+    background-position: -58px -108px;
+    position: absolute;
+    left:4px;
+    top:9px;
+}
+.jd_header .jd_search input {
+    height:30px;
+    width:100%;
+    margin-top: 5px;
+    padding-left: 30px;
+    border-radius: 15px;
+}
+.jd_header .jd_login{
+     height:40px;
+     width:50px;
+     position: absolute;
+     top:0;
+     right:0;
+     /*background-color: blue;*/
+    text-align: center;
+ }
+.jd_header .jd_login a{
+    color: #fff;
+    line-height:40px;
+}
+/*头部结束*/
+
+/*轮播图开始*/
+.banner {
+    width:100%;
+    position: relative;
+    overflow: hidden;
+}
+.banner .imgUl {
+    width:1000%;
+    transform: translateX(-10%);
+}
+.banner .imgUl li {
+    width:10%;
+    float: left;
+}
+
+
+.banner .pointUl {
+    position: absolute;
+    left:50%;
+    bottom:10px;
+    transform: translateX(-50%);
+}
+
+.banner .pointUl li {
+    width: 8px;
+    height: 8px;
+    border:1px solid #fff;
+    border-radius: 50%;
+    float: left;
+    margin: 0 5px;
+}
+
+.banner .pointUl li.now {
+    background-color: #fff;
+}
+    /*轮播图结束*/
+
+
+
+
+/*导航开始*/
+.nav li{
+    width:20%;
+    float: left;
+    padding:10px 0;
+}
+.nav li a img{
+    width:40px;
+    height:40px;
+    margin:0 auto;
+}
+.nav li p {
+    text-align: center;
+    padding: 5px 0;
+}
+/*导航结束*/
+
+/*新闻快报开始*/
+
+.news {
+    height:30px;
+    margin: 0 15px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+}
+
+.news .logo {
+    width:73px;
+    height:16px;
+    background: url("../img/jd-news-tit.png") no-repeat;
+    background-size:73px 16px;
+    position: absolute;
+    left:8px;
+    top: 7px;
+}
+
+.news .text {
+    margin: 0 40px 0 82px;
+    height:30px;
+    padding-left: 15px;
+    line-height:30px;
+    overflow: hidden;
+}
+.news .text a {
+    display: block;
+    height:30px;
+    line-height: 30px;
+    /*transition: all 1s;*/
+}
+.news .more {
+    height:30px;
+    width:40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height:30px;
+}
+
+/*新闻快报结束*/
+/*秒杀开始*/
+.seckill {
+    width:100%;
+    /*background-color: red;*/
+    margin-top: 15px;
+    padding: 0 10px;
+    position: relative;
+    line-height:30px;
+    background-color: #fff;
+
+}
+.seckill .seckill_title{
+
+}
+.seckill .seckill_title .clock {
+    height:22px;
+    width:22px;
+    background-position: -82px -109px;
+    position: absolute;
+    top: 3px;
+    left: 18px;
+}
+.seckill .seckill_title .seckill_text {
+    color: #f23030;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.seckill .seckill_title .time {
+    margin-top: 6px;
+}
+.seckill .seckill_title .time span {
+    display: block;
+    float: left;
+    line-height:18px;
+    text-align: center;
+}
+.seckill .seckill_title .time span:nth-child(odd) {
+    width:18px;
+    height:18px;
+    background-color: #000;
+    border-radius:3px;
+    color: #fff;
+}
+.seckill .seckill_title .time span:nth-child(2n){
+    width:10px;
+}
+.seckill .seckill_content {
+    overflow: scroll;
+}
+.seckill .seckill_content ul {
+    width:2000px;
+}
+.seckill .seckill_content li {
+    width:87px;
+    float: left;
+    line-height:20px;
+    text-align: center;
+}
+.seckill .seckill_content a{
+    display: block;
+    height:70px;
+    width:87px;
+    border-right: 1px solid #ccc;
+}
+.seckill .seckill_content a img {
+    width:60px;
+    height:60px;
+    margin:5px auto;
+}
+.seckill .seckill_content .new-pries{
+    color: #f23030;
+    font-weight: 700;
+}
+.seckill .seckill_content .old-pries{
+    text-decoration: line-through;
+}
+
+
+/*秒杀结束*/
+
+/*主会场开始*/
+
+.main a {
+    float: left;
+    width:33.33%;
+}
+/*主会场结束*/
+
+/*产品开始*/
+
+.product li a {
+    float: left;
+    width:50%;
+}
+
+.product li:first-child a {
+    width:33.33%;
+}
+/*产品结束*/
+
+
